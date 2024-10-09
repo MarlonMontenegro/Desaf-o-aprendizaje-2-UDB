@@ -13,4 +13,4 @@
 
 - **Marlon Eduardo Montenegro Paz** - [@MarlonMontenegro](https://github.com/MarlonMontenegro)
 - **Hugo Fernando Sosa Orellana** - [@FS0SA](https://github.com/FS0SA)
-- **Andrea Paola Montenegro Paz MP101106** - [@aaaamontenegro](https://github.com/aaaamontenegro)
+- **Andrea Paola Montenegro Paz ** - [@aaaamontenegro](https://github.com/aaaamontenegro)
