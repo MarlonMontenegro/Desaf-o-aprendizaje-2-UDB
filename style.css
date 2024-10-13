@@ -606,3 +606,66 @@ h2 {
 }
 
 /* reserva hoy texto */ 
+
+/* Nuestro Equipo - Fernando Sosa */
+
+.ne-body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.ne-maintxt {
+  text-align: center;
+  color: #000000;
+  margin-top: 30px;
+}
+.ne-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.ne-members {
+  display: flex;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 10px;
+  align-items: center;
+}
+.ne-photos {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px #000;
+  margin-right: 20px;
+}
+.ne-info {
+  display: flex;
+  flex-direction: column;
+}
+.ne-name {
+  font-size: 1.5em;
+  margin: 0;
+}
+.ne-carnet {
+  font-size: 1.2em;
+  color: #555;
+  margin: 5px 0;
+}
+.ne-description {
+  font-size: 1em;
+  color: #333;
+}
+
+.logo-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 35px;
+  height: 50px;
+  margin-top: 5px;
+}
