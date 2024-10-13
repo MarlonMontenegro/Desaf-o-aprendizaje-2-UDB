@@ -120,12 +120,6 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 .logo-2 {
   display: flex;
   align-items: center;
@@ -133,6 +127,11 @@ h2 {
   width: 35px;
   height: 50px;
   margin-top: 5px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .logo h1 {
   font-size: 18px;
@@ -508,114 +507,7 @@ h2 {
 }
 
 
-/* ======================== CONTACTANOS PAO =============*/
-
-.paolavertical {
-  background-color: rgba(156, 184, 174, 0.925);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.paolabox1 {
-  position: relative;
-  background-color: #f0e9e905;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 60px;
-  box-shadow: 0 4px 8px rgba(187, 192, 156, 0.212);
-  
-}
-
-.paolabox1 h1 {
-  color: #4a1ba1cb;
-}
-.paolabox2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
-  padding: 35px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
-  color: white; 
-  overflow: hidden;
-  min-height: 400px; 
-}
-
-
-.paolabox1 h1, .paolabox1 a {
-  position: relative; 
-  z-index: 2; 
-  font-weight: var(--heading-font-weight);
-  font-size: var(--heading-font-size-large);
-  color: var(--main-black);
-
-}
-
-.paolabox1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad para que el texto sea legible */
-  z-index: 1; /* Asegura que el fondo oscuro esté entre la imagen y el contenido */
-}
-
-
-/*tarjetas para las fotos de la segunda seccion*/
-
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra ligera */
-  border-radius: 8px; /* Esquinas redondeadas */
-  overflow: hidden; /* Para que la imagen no se salga de la tarjeta */
-}
-
-.card img {
-  width: 100%; /* Asegura que la imagen ocupe el ancho completo de la tarjeta */
-  height: auto; /* Mantiene la proporción de la imagen */
-}
-
-.card-body {
-  padding: 15px; /* Añade espacio dentro del cuerpo de la tarjeta */
-}
-
-.card-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.card-text {
-  font-size: 14px;
-  color: black;
-}
-
-.card {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-/*animacion de la tarjeta */
-
-.card:hover {
-  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta ligeramente */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar más profundidad */
-}
-
-.card img {
-  transition: transform 0.3s ease-in-out;
-}
-
-.card:hover img {
-  transform: scale(1.1); /* Hace zoom en la imagen cuando el cursor está sobre la tarjeta */
-}
-
-/* reserva hoy texto */ 
-
-/* Nuestro Equipo - Fernando Sosa */
+/* PAGINA NUESTRO EQUIPO FERNANDO SOSA */
 .ne-body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
@@ -623,11 +515,13 @@ h2 {
   padding: 0;
   margin-top: 20px;
 }
+
 .ne-maintxt {
   text-align: center;
   color: #000000;
   margin-top: 30px;
 }
+
 .ne-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -636,6 +530,7 @@ h2 {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .ne-members {
   display: flex;
   background-color: #ffffff;
@@ -643,6 +538,7 @@ h2 {
   padding: 10px;
   align-items: center;
 }
+
 .ne-photos {
   width: 150px;
   height: 150px;
@@ -650,19 +546,23 @@ h2 {
   border: 2px #000;
   margin-right: 20px;
 }
+
 .ne-info {
   display: flex;
   flex-direction: column;
 }
+
 .ne-name {
   font-size: 1.5em;
   margin: 0;
 }
+
 .ne-carnet {
   font-size: 1.2em;
   color: #555;
   margin: 5px 0;
 }
+
 .ne-description {
   font-size: 1em;
   color: #333;
