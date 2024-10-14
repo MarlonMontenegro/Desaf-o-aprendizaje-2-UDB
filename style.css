@@ -515,6 +515,9 @@ h2 {
   color: var(--pure-white);
 }
 
+.footer-space {
+  margin-bottom: 15px;
+}
 
 /* PAGINA NUESTRO EQUIPO FERNANDO SOSA */
 .ne-body {
