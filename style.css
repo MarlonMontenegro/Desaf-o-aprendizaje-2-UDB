@@ -440,6 +440,15 @@ h2 {
   color: var(--pure-white);
   align-items: center;
 }
+.footer-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #000;
+  padding: 40px;
+  color: var(--pure-white);
+  align-items: center;
+  margin-top: 50px;
+}
 
 .footer-left {
   display: flex;
