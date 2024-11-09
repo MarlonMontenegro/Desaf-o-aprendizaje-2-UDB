@@ -39,6 +39,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: var(--primary-font);
+  text-decoration: none;
 }
 
 ul {
@@ -112,7 +113,7 @@ h2 {
   color: var(--elsalvador-color-1);
 }
 
-/* ======================== NAVBAR =============*/
+/*================================== NAVBAR =================================  */
 
 .navbar {
   display: flex;
@@ -146,13 +147,6 @@ h2 {
   font-weight: 700;
 }
 
-.triangulo {
-  width: 26px;
-  height: 26px;
-  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-  background: var(--elsalvador-gradient);
-}
-
 .menu ul {
   display: flex;
   color: var(--main-black);
@@ -172,6 +166,12 @@ h2 {
   font-weight: 700;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* =====================  HERO  ===================== */
 
 .hero {
@@ -179,6 +179,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -294,7 +295,6 @@ h2 {
 }
 
 .tour-grid {
-  width: 100vw;
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -406,6 +406,7 @@ h2 {
 .features {
   display: flex;
   height: 100vh;
+  margin-top: 110px;
 }
 
 .features-container {
@@ -429,6 +430,81 @@ h2 {
   padding: 22px;
   line-height: 30px;
 }
+/* =====================  Discounts  ===================== */
+
+.discount {
+  max-width: 1200;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: -100px;
+}
+
+.discount-heading {
+  padding-bottom: 20px;
+}
+
+.discount-heading h1 {
+  text-align: center;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+}
+
+.discount-heading p {
+  text-align: center;
+  font-weight: 600;
+  color: #555;
+}
+
+.discount-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.discount-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--pure-white);
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgb(0, 0, 0, 0.1);
+}
+
+.discount-item:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+.discount-top {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.discount-top p {
+  margin-top: -10px;
+}
+
+.discount-mid {
+  margin-top: -15px;
+  color: #555;
+}
+
+.discount-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-txt {
+  color: green;
+  font-weight: 900;
+}
 
 /* =====================  Footer  ===================== */
 
@@ -436,18 +512,9 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #000;
-  padding: 40px;
+  padding: 50px;
   color: var(--pure-white);
   align-items: center;
-}
-.footer-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #000;
-  padding: 40px;
-  color: var(--pure-white);
-  align-items: center;
-  margin-top: 50px;
 }
 
 .footer-left {
@@ -578,4 +645,219 @@ h2 {
 .ne-description {
   font-size: 1em;
   color: #333;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #3d3d3d;
+}
+
+/* PAOLA */
+
+.paola-main {
+  padding-bottom: 100px;
+}
+
+.map {
+  margin: auto 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.map-container,
+.contact-info-container {
+  height: 100%;
+}
+
+.form-group {
+  z-index: -2;
+}
+.map-container,
+iframe {
+  border-radius: 20px;
+}
+
+.FAQ {
+  padding: 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.FAQ h1 {
+  text-align: center;
+  padding: 60px;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  /* ====================== NAVBAR ===================== */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Activa el menú cuando esté visible */
+  .menu.show {
+    display: block;
+  }
+
+  /* =====================  Hero ===================== */
+
+  .hero {
+    display: none;
+  }
+
+  /* =====================  FEATURES  ===================== */
+
+  .features {
+    display: flex;
+    height: 100%;
+    margin: 20px;
+    padding: 50px;
+  }
+
+  .features-container {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .feature h1 {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+  }
+
+  .feature p {
+    font-size: 10px;
+    color: var(--main-black);
+    text-align: center;
+    padding: 22px;
+    line-height: 30px;
+  }
+
+  /* =====================  Discounts  ===================== */
+
+  .discount-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+
+  /* =====================  Call to action  ===================== */
+
+  .call-to-action {
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .tour-container {
+    width: 100%;
+    margin: 0 auto;
+
+    flex-direction: column;
+  }
+
+  .tour-txt {
+    align-items: center;
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  .tour-txt h1 {
+    font-size: 25px;
+  }
+
+  .tour-photo {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .btn-tours .btn-secondary {
+    padding-right: 0;
+  }
+
+  /* =====================  Tours  ===================== */
+
+  .tours {
+    display: grid;
+    height: 100vh;
+    padding-bottom: 120px;
+  }
+
+  .tour-grid {
+    height: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .card-container p {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .card-container .card-btn {
+    margin-bottom: 120px;
+    margin-top: 0;
+  }
+  .tour-1:hover,
+  .tour-2:hover,
+  .tour-3:hover,
+  .tour-4:hover {
+    transform: translateY(0px);
+  }
+
+  /* ====================== FOOTER ===================== */
+
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer-center {
+    margin: 20px 0;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+    text-align: center;
+  }
 }

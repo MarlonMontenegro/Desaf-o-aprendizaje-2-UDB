@@ -15,6 +15,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
     <!-- CSS -->
 
     <link rel="stylesheet" href="style.css" />
@@ -32,22 +37,22 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <div><img class="logo-2" src="assets/img/logo/logo.png" /></div>
+          <img class="logo-2" src="assets/img/logo/logo.png" />
           <h1><a href="./index.html">Torogoz Tours</a></h1>
         </div>
+
+        <!-- Icono de hamburguesa para menú móvil -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
         <div class="menu">
           <ul>
             <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
             <li><a href="./contactanos.html">Contactanos</a></li>
             <li><a href="./nuestroEquipo.html">Nuestro Equipo</a></li>
+            <li><a href="./calendario.html">Calendario</a></li>
+            <li><a href="./testimonials.html">Testimonios</a></li>
+            <li><a href="./testimonials.html">Promociones</a></li>
           </ul>
-        </div>
-
-        <div>
-          <a class="primary-btn" href="./contactanos.html"
-            ><span>Contactanos</span></a
-          >
         </div>
       </nav>
     </header>
@@ -100,7 +105,6 @@
           </div>
         </div>
       </section>
-
       <section class="tours">
         <div class="tour-grid">
           <div class="tour-1">
@@ -109,7 +113,7 @@
               <p>Viaje de 3 dias</p>
               <div class="line"></div>
               <div class="card-btn">
-                <a href="#" class="btn-tour-card"
+                <a href="./tour.html" class="btn-tour-card"
                   >Reserva tu Aventura
                   <span class="material-symbols-outlined arrow">
                     arrow_forward
@@ -125,7 +129,7 @@
               <p>Viaje de 12 horas</p>
               <div class="line"></div>
               <div class="card-btn">
-                <a href="#" class="btn-tour-card"
+                <a href="./tour.html" class="btn-tour-card"
                   >Reserva tu Aventura
                   <span class="material-symbols-outlined arrow">
                     arrow_forward
@@ -136,11 +140,11 @@
           </div>
           <div class="tour-3">
             <div class="card-container">
-              <h1>Tour Desierto</h1>
-              <p>Viaje de 2 semanas</p>
+              <h1>Tour Costa Rica</h1>
+              <p>Viaje de 7 dias</p>
               <div class="line"></div>
               <div class="card-btn">
-                <a href="#" class="btn-tour-card"
+                <a href="./tour.html" class="btn-tour-card"
                   >Reserva tu Aventura
                   <span class="material-symbols-outlined arrow">
                     arrow_forward
@@ -155,7 +159,7 @@
               <p>Viaje del dia</p>
               <div class="line"></div>
               <div class="card-btn">
-                <a href="#" class="btn-tour-card"
+                <a href="./tour.html" class="btn-tour-card"
                   >Reserva tu Aventura
                   <span class="material-symbols-outlined arrow">
                     arrow_forward
@@ -196,6 +200,69 @@
           </div>
         </div>
       </section>
+
+      <section class="discount">
+        <div class="discount-heading">
+          <h1>Ofertas especiales</h1>
+          <p>
+            Descubre nuestros increibles descuescuentos en tours. ¡No te lo
+            Pierdas!
+          </p>
+        </div>
+        <div class="discount-container">
+          <div class="discount-item">
+            <div class="discount-top">
+              <h2>Aventura en la Selva</h2>
+              <p>Amazonas</p>
+            </div>
+            <div class="discount-mid">
+              <p><i class="far fa-calendar-alt"></i> 5 días</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Brasil
+              </p>
+            </div>
+            <div class="discount-bottom">
+              <p class="discount-txt">15% OFF</p>
+              <a class="primary-btn"><span>Reservar</span></a>
+            </div>
+          </div>
+          <div class="discount-item">
+            <div class="discount-top">
+              <h2>Playas del caribe</h2>
+              <p>Riviera Maya</p>
+            </div>
+            <div class="discount-mid">
+              <p><i class="far fa-calendar-alt"></i> 7 dias</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>
+                México
+              </p>
+            </div>
+            <div class="discount-bottom">
+              <p class="discount-txt">30% OFF</p>
+              <a class="primary-btn"><span>Reservar</span></a>
+            </div>
+          </div>
+          <div class="discount-item">
+            <div class="discount-top">
+              <h2>Maravillas Andinas</h2>
+              <p>Machu Picchu</p>
+            </div>
+            <div class="discount-mid">
+              <p><i class="far fa-calendar-alt"></i> 6 días</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Perú
+              </p>
+            </div>
+            <div class="discount-bottom">
+              <p class="discount-txt">50% OFF</p>
+              <a class="primary-btn"><span>Reservar</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="footer">
         <div class="footer-left">
           <div class="footer-logo">
@@ -228,4 +295,10 @@
       </footer>
     </main>
   </body>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 </html>
